@@ -1,0 +1,21 @@
+==============================
+Section D
+==============================
+-------------------------------
+   Question 1 -
+------------------------------
+ I suggested they use JSON instead of XML. JSON is readable and easy for application integration. JSON can catch the objects but XML only stuctural part.
+
+The reason JSON is a choice for Restful API integration is :
+
+ => Less verbose : more compact style more readable
+ => Faster : Json uses less data over load compared to XML software parsing process that include DOM manipulation
+ => Readable: Json structure strightforward and readable. And allow us a fast domain object mapping to any programming languag.
+ => Structure matches the data : uses a map data structure, which is predictable and easily understanable data model.
+ => Objects align in code which us useful for creating domain objects in dynamic languages.
+ 
+-------------------------------
+   Question 2 -
+-------------------------------
+It's because at the POST man "GET" HTTP request we have to set username and password for the Body. And means the system marked as Authorization needed.
+
