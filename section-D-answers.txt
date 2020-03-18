@@ -17,5 +17,10 @@ The reason JSON is a choice for Restful API integration is :
 -------------------------------
    Question 2 -
 -------------------------------
-It's because at the POST man "GET" HTTP request we have to set username and password for the Body. And means the system marked as Authorization needed.
+Yes there is a problem at the login endpoint.
 
+We use HTTP get request. We don't have access to REST API because of access was denied. We provide basic autentication for our rest API well.
+However on the Body section we give wrong user name and password.
+
+For this reason, to fix the above reason. I will remove the username and password JSON file from Body section in POST MAN. and I create a GET request for the login endpoint. Set the Authorization header to Basic Authentication with the right username and password. And I press send to test the login end point work as intended.
+And I should get a a 200 OK response.
